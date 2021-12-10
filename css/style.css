@@ -301,21 +301,7 @@ opacity: .5;
 
 
 /* ------------------------------ */
-.pack img{
-    height: 200px;
-    width: 200px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    transition: all .5s;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-}
+
 .g-container{
     display: flex;
     flex-wrap: wrap;
@@ -347,28 +333,36 @@ opacity: .5;
     -ms-transform: translateY(-20px);
     -o-transform: translateY(-20px);
 }
-.pack button{
-    visibility: hidden;
-    color: #000;
-    padding: 0 30px ;
+.pack img{
+    height: 200px;
+    width: 200px;
     margin-bottom: 20px;
-    font-size: 20px;
-    border-radius: 30px;
-    border-color: transparent;
-    transition: all .4;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    -webkit-transition: all .4;
-    -moz-transition: all .4;
-    -ms-transition: all .4;
-    -o-transition: all .4;
+    border-radius: 50%;
+    transition: all .5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
 }
-.pack:hover button{
-    visibility: visible;
+.pack:hover img{
+    width: 150px;
+    height: 150px;
+    transform: rotate(2turn);
+    -webkit-transform: rotate(2turn);
+    -moz-transform: rotate(2turn);
+    -ms-transform: rotate(2turn);
+    -o-transform: rotate(2turn);
+}
+.pack h1{
+    padding: 10px;
 }
 .pack p{
+    padding: 15px;
+    text-align: center;
     visibility: hidden;
     transition: all .180s;
     -webkit-transition: all .180s;
@@ -376,6 +370,25 @@ opacity: .5;
     -ms-transition: all .180s;
     -o-transition: all .180s;
 }
+.pack button{
+    visibility: hidden;
+    color: #000;
+    padding: 0 30px ;
+    margin: 20px;
+    font-size: 20px;
+    border: 3px solid rgb(119, 0, 0) ;
+    border-radius: 30px;
+    transition-property: box-shadow, background-color,transform ;
+    transition-duration: 1s;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.pack:hover button{
+    visibility: visible;
+}
+
 .pack:hover p{
     visibility: visible;
 }
@@ -397,21 +410,3 @@ opacity: .5;
     box-shadow: rgb(167 162 162) 0px 0px 22px 10px;
     cursor: pointer;
 }
-.pack:hover img{
-    width: 150px;
-    height: 150px;
-    transform: rotate(2turn);
-    -webkit-transform: rotate(2turn);
-    -moz-transform: rotate(2turn);
-    -ms-transform: rotate(2turn);
-    -o-transform: rotate(2turn);
-}
-
-.pack p{
-    padding: 15px;
-    text-align: center;
-}
-.pack h1{
-    padding: 10px;
-}
-
